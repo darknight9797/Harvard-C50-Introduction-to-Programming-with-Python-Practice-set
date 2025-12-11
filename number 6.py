@@ -1,0 +1,19 @@
+#using functions to handle exceptions
+
+def main():
+    x = get_integer()
+    print(f"x is {x}")
+    
+def get_integer():
+    
+    while True:         #loop for enrering an integer until valid
+        try:
+            return int(input("Enter a number: "))
+            
+        except ValueError:
+            pass
+           
+
+
+
+main()
